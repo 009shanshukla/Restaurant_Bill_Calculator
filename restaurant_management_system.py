@@ -142,7 +142,6 @@ cost_inp = StringVar()
 paneer_tikka_inp = StringVar() 
 chicken_tikka_inp = StringVar()
 
-
 def ref():
 	#status = Label(left, text = "calculating", bd = 1, relief = SUNKEN, anchor = W)
 	#status.pack(side = BOTTOM, fill = X)
@@ -150,34 +149,57 @@ def ref():
 	random_ref = str(x)
 	rand.set(random_ref)
 	try:
-		CoF = float(fries_inp.get())*50
+		if fries_inp.get() == "":
+			CoF = 0
+		else:
+			CoF = float(fries_inp.get())*50
 	except Exception as e:
+		obj = type(e).__name__
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
-		fries_inp.set("")	
+		fries_inp.set("")
 		
 	try:	
-		CoS = float(samosa_inp.get())*15
+		if samosa_inp.get() == "":
+			CoS = 0
+		else:
+			CoS = float(samosa_inp.get())*15
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		samosa_inp.set("")
+	
 	try:
-		CoB = float(burger_inp.get())*30
+		if burger_inp.get() == "":
+			CoB = 0
+		else:
+			CoB = float(burger_inp.get())*30
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		burger_inp.set("")
+
 	try:
-		CoD = float(drinks_inp.get())*30
+		if drinks_inp.get() == "":
+			CoD = 0
+		else:
+			CoD = float(drinks_inp.get())*30
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		drinks_inp.set("")
+
 	try:
-		CoP = float(paneer_tikka_inp.get())*80
+		if paneer_tikka_inp.get() == "":
+			CoP = 0
+		else:
+			CoP = float(paneer_tikka_inp.get())*80
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		paneer_tikka_inp.set("")
+
 	try:
-		CoC = float(chicken_tikka_inp.get())*120
-	except Exception as e:
+		if chicken_tikka_inp.get() == "":
+			CoC = 0
+		else:
+			CoC = float(chicken_tikka_inp.get())*120
+	except Exception as e:	
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		chicken_tikka_inp.set("")
 
