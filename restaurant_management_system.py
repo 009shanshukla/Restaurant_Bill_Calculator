@@ -318,13 +318,5 @@ btn_exit.grid(row=7, column= 3)
 
 
 
-
-
-
-
-
-
-
-
-
 root.mainloop()
+
