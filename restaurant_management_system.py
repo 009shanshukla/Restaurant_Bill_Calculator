@@ -143,8 +143,17 @@ paneer_tikka_inp = StringVar()
 chicken_tikka_inp = StringVar()
 
 def ref():
-	#status = Label(left, text = "calculating", bd = 1, relief = SUNKEN, anchor = W)
-	#status.pack(side = BOTTOM, fill = X)
+	
+	f1 = open('value.txt','r')
+	line = f1.readlines()
+	fries_p = float(line[0])
+	samosa_p = float(line[1])
+	burger_p = float(line[2])
+	drinks_p = float(line[3])
+	paneer_tikka_p = float(line[4])
+	chicken_tikka_p = float(line[5])
+	f1.close()
+
 	x = random.randint(23133,33344)
 	random_ref = str(x)
 	rand.set(random_ref)
@@ -152,9 +161,8 @@ def ref():
 		if fries_inp.get() == "":
 			CoF = 0
 		else:
-			CoF = float(fries_inp.get())*50
+			CoF = float(fries_inp.get())*fries_p
 	except Exception as e:
-		obj = type(e).__name__
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		fries_inp.set("")
 		
@@ -162,7 +170,7 @@ def ref():
 		if samosa_inp.get() == "":
 			CoS = 0
 		else:
-			CoS = float(samosa_inp.get())*15
+			CoS = float(samosa_inp.get())*samosa_p
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		samosa_inp.set("")
@@ -171,7 +179,7 @@ def ref():
 		if burger_inp.get() == "":
 			CoB = 0
 		else:
-			CoB = float(burger_inp.get())*30
+			CoB = float(burger_inp.get())*burger_p
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		burger_inp.set("")
@@ -180,7 +188,7 @@ def ref():
 		if drinks_inp.get() == "":
 			CoD = 0
 		else:
-			CoD = float(drinks_inp.get())*30
+			CoD = float(drinks_inp.get())*drinks_p
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		drinks_inp.set("")
@@ -189,7 +197,7 @@ def ref():
 		if paneer_tikka_inp.get() == "":
 			CoP = 0
 		else:
-			CoP = float(paneer_tikka_inp.get())*80
+			CoP = float(paneer_tikka_inp.get())*paneer_tikka_p
 	except Exception as e:
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		paneer_tikka_inp.set("")
@@ -198,7 +206,7 @@ def ref():
 		if chicken_tikka_inp.get() == "":
 			CoC = 0
 		else:
-			CoC = float(chicken_tikka_inp.get())*120
+			CoC = float(chicken_tikka_inp.get())*chicken_tikka_p
 	except Exception as e:	
 		tkinter.messagebox.showinfo('Error','Incorrect Input')
 		chicken_tikka_inp.set("")
@@ -218,7 +226,9 @@ def ref():
 	 		
 
 
-
+def bck():
+	root.destroy()
+	import question
 
 
 
@@ -314,6 +324,9 @@ btn_reset.grid(row=7, column= 2)
 
 btn_exit = Button(left, padx= 16, pady= 8, bd= 16, fg= "black", font=('arial',16,'bold'), width=10, text= "Exit", bg= "powder blue",command = qexit)
 btn_exit.grid(row=7, column= 3)
+
+btn_bck = Button(left, padx= 16, pady= 8, bd= 16, fg= "black", font=('arial',16,'bold'), width=10, text= "Back", bg= "powder blue",command = bck)
+btn_bck.grid(row=8, column= 2)
 
 
 

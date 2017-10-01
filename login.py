@@ -10,7 +10,7 @@ password_inp = StringVar()
 def enter():
 	if name_inp.get() == "shantanu" and password_inp.get() == "5657":
 		root1.destroy()
-		import restaurant_management_system
+		import question
 	else:
 		tkinter.messagebox.showinfo('Error','Authentication Failed')
 		name_inp.set("")
@@ -25,7 +25,7 @@ label.grid(row = 0)
 
 
 label1 = Label(root1, text="name")
-label2 = Label(root1, text="password")
+label2 = Label(root1, font =('slant',10,'bold'),text="enter(1234)")
 	
 entry1 = Entry(root1, textvariable = name_inp)
 entry2 = Entry(root1, textvariable = password_inp)
