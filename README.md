@@ -17,13 +17,13 @@ First to use this Project you need to install :-
   
   After this a window will pop up like this :-
 
-https://user-images.githubusercontent.com/20949109/31057298-12be5046-a6fe-11e7-85ba-910f3e49eedb.png  
+![](https://user-images.githubusercontent.com/20949109/31057298-12be5046-a6fe-11e7-85ba-910f3e49eedb.png)  
   
   Then you need to type shantanu in user name and in password type 5657 .
   
   After that an another window will pop up showing like this :-
   
-  https://user-images.githubusercontent.com/20949109/31057301-12ea7cc0-a6fe-11e7-8779-9825c29bab8b.png
+  ![](https://user-images.githubusercontent.com/20949109/31057301-12ea7cc0-a6fe-11e7-8779-9825c29bab8b.png)
   
  however brightness mode won't see :'), my bad sorry! , but now you have two choice either go to bill or go to change price :
  
@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/20949109/31057298-12be5046-a6fe-11e7-8
   
         Clicking on bill (Press Here button) a window will pop up like this 
 
-https://user-images.githubusercontent.com/20949109/31057299-12c3839a-a6fe-11e7-93ee-c0cfd23d0912.png
+![](https://user-images.githubusercontent.com/20949109/31057299-12c3839a-a6fe-11e7-93ee-c0cfd23d0912.png)
        
        Here you can enter everthing (like quantity of fries , samosa etc ) and according to quantity everything will be        printed     pressing total button.
        
@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/20949109/31057299-12c3839a-a6fe-11e7-9
  
  In case if you have pressed this button then a window will pop like this :-
  
- https://user-images.githubusercontent.com/20949109/31057295-12b3a236-a6fe-11e7-9a14-e390b4a67169.png
+ ![](https://user-images.githubusercontent.com/20949109/31057295-12b3a236-a6fe-11e7-9a14-e390b4a67169.png)
  
  Now you can change price of you menu items in case you want to.
  
